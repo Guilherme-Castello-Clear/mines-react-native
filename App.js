@@ -19,7 +19,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import params from './src/params' 
-
+import Field from './src/components/Field';
 export default class App extends Component {
   render(){
     return(
@@ -28,6 +28,10 @@ export default class App extends Component {
         <Text style={styles.instructions}>Tamanho da Grade:
           {params.getRowsAmount()}x{params.getColumnsAmount()}
         </Text>
+        <Field/>
+        <Field opened/>
+        <Field opened nearMines={10}/>
+
       </View>
     )
   }
