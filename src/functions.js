@@ -85,6 +85,12 @@ const openField = (board, row, column) => {
   }
 };
 
+const invertFlag = (board, row, column) => {
+  const field = board[row][column]
+  field.flagged = !field.flagged
+}
+
+
 const fields = board => [].concat(...board);
 const hadExplosion = board =>
   fields(board).filter(field => field.exploded).length > 0;
@@ -103,4 +109,5 @@ export {
   hadExplosion,
   wonGame,
   showMines,
+  invertFlag
 };
