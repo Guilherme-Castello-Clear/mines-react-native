@@ -2,8 +2,7 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 
 export default props => {
-  
-    return (
+  return (
     <View style={styles.container}>
       <View style={styles.coreMine} />
       <View style={styles.line} />
@@ -12,11 +11,9 @@ export default props => {
       <View style={[styles.line, {transform: [{rotate: '135deg'}]}]} />
     </View>
   );
-
 };
 
 const styles = StyleSheet.create({
-
   container: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -39,5 +36,5 @@ const styles = StyleSheet.create({
   exploded: {
     backgroundColor: 'red',
     borderColor: 'red',
-  }
+  },
 });
