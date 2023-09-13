@@ -20,6 +20,7 @@ import {
 
 import params from './src/params' 
 import Field from './src/components/Field';
+import Flag from './src/components/Flag';
 export default class App extends Component {
   render(){
     return(
@@ -32,6 +33,7 @@ export default class App extends Component {
         <Field opened/>
         <Field opened nearMines={10}/>
         <Field mined opened exploded/>
+        <Field flagged/>
       </View>
     )
   }
